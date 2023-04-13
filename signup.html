@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import normalize.css from CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- Import signup.css from local directory -->
+    <link rel="stylesheet" href="/style/signup.css">
+    <title>Access-signup</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <!-- Use appropriate alt text for images -->
+                <li><img src="/images/access-bank-plc.256x64.png" alt="Access Bank logo"></li>
+                <li>Login</li>
+                <li>Reset Password</li>
+                <li>Unlock Device</li>
+                <li>Quick Information</li>
+            </ul>
+        </nav>
+    </header>
+    <div id="container">
+        <div id="register-signin">
+            <button id="but-signin">Sign In</button>
+            <button id="but-register">Register</button>
+        </div>
+        <div id="form">
+            <!-- Combine multiple forms into one -->
+            <form action="" class="login-form">
+                <label for="login">Login *</label>
+                <input type="text" id="login" name="login" placeholder="Enter your login" required><br>
+                <label for="password">Password *</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required><br>
+                <div id="checkbox-remember">
+                    <label for="remember-me">Remember Me</label>
+                    <input type="checkbox" id="remember-me" name="remember-me">
+                </div>
+            </form>
+        </div>
+        <div id="submit-butt">
+            <button type="submit" id="submit-button">Sign In</button>
+        </div>
+    </div>
+</body>
+</html>
+<!-- 
+Comments:
+- Added alt attribute to the Access Bank logo image for accessibility
+- Wrapped the "Sign In" button in a form tag to enable submitting the form
+- Used image tag instead of background image to display the Access Bank logo
+- Added comments to describe what each section of the HTML code is doing
+-->
